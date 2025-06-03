@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: deployment
+metadata:
+  name: thunder
+spec:
+  replicas: 2
+ selector:
+   matchlables:
+     app: sky
+ template:
+   metadata:
+     lables:
+      app : sky
+spec:
+  containers:
+    -name: cloud
+     image: 
+     ports:
